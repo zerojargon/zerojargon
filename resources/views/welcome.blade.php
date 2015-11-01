@@ -41,6 +41,10 @@
                 -webkit-animation: shadow 0.5s;
                 animation: shadow 1s;
             }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
             .title:before {
                 position: fixed;
                 top: 0;
@@ -72,7 +76,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title" id="zj"><strong>Zero</strong>Jargon</div>
+                <a href="mailto:info@zerojargon.com"><div class="title" id="zj"><strong>Zero</strong>Jargon</div></a>
             </div>
         </div>
     </body>
