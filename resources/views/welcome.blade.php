@@ -37,10 +37,12 @@
                 border-radius: 3px;
                 padding: 2em 1.5em;
                 background: #fff;
-                box-shadow: 0.05em 0.05em 0.1em 0.05em rgba(0,0,0,0.1);
+                box-shadow: 0.05em 0.05em 0.1em 0.05em rgba(0,0,0,0.05);
+                -webkit-animation: shadow 0.5s;
+                animation: shadow 1s;
             }
             .title:before {
-                position:  absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 right: 0;
@@ -52,13 +54,18 @@
                 -webkit-animation: expand 1s; /* Chrome, Safari, Opera */ 
                 animation: expand 1s;
             }
-            @-webkit-keyframes expand{
+            @-webkit-keyframes expand {
                 0% {bottom: 100%;}
                 100% {bottom: 50%;}
             }
-            @keyframes expand{
+            @keyframes expand {
                 0% {bottom: 100%;}
                 100% {bottom: 50%;}
+            }
+
+            @-webkit-keyframes shadow {
+                0%   { box-shadow: 0px 0px 0px rgba(0,0,0,0); }
+                100% { box-shadow: 0.05em 0.05em 0.1em 0.05em rgba(0,0,0,0.05); }
             }
         </style>
     </head>
